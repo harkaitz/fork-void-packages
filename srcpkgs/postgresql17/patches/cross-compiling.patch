@@ -1,0 +1,11 @@
+--- a/configure 2025-11-06 14:59:27.408860429 +0100
++++ b/configure 2025-11-06 14:59:38.269624917 +0100
+@@ -19224,7 +19224,7 @@
+   pgac_save_LDFLAGS=$LDFLAGS
+ LDFLAGS="$pgac_save_LDFLAGS -Wl,--export-dynamic"
+ if test "$cross_compiling" = yes; then :
+-  pgac_cv_prog_cc_LDFLAGS_EX_BE__Wl___export_dynamic="assuming no"
++  pgac_cv_prog_cc_LDFLAGS_EX_BE__Wl___export_dynamic=yes
+ else
+   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
